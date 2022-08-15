@@ -1,0 +1,45 @@
+/**
+ * Custom styles to immediately follow Tailwind’s `base` layer
+ *
+ * “Add things like base typography styles [or] opinionated global resets.”
+ *
+ * — from https://tailwindcss.com/docs/plugins#adding-base-styles
+ */
+
+/**
+ * This uses the background and foreground colors declared in the
+ * `theme.json` file and is applied both to the frontend and in the block
+ * editor.
+*/
+body {
+	@apply bg-background text-foreground;
+	font-family: 'Open sans', sans-serif;
+
+
+}
+
+.container {
+	background-color: #FFFFFF;
+	@apply mx-auto;
+	max-width: 100% !important;
+}
+
+
+.hero {
+	@apply max-w-[100%];
+}
+
+
+
+.connect {
+	@apply max-w-[100%] lg:max-w-[900px] xl:max-w-[1006px];
+	margin: auto;
+}
+
+
+h1, h2, h4 {
+	font-family: HK Grotesk;
+	color: #183B56;
+	margin: 0px;
+	padding: 0px;
+}

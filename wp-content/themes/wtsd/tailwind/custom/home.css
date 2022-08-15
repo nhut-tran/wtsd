@@ -1,0 +1,98 @@
+/*import style for swipejs for homepage */
+@import "../../../../../node_modules/swiper/swiper-bundle.css";
+
+
+.hero__sub-title {
+    color: #183B56;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero__stick {
+    background-color: #344563;
+}
+
+
+.hero__description {
+    color: #5A7184
+}
+
+.small-text {
+    @apply text-base leading-7 tracking-normal font-normal sm:text-lg sm:leading-8;
+}
+
+.btn {
+    border-radius: 4px;
+    color: #FFFF;
+
+}
+
+.btn--action {
+    background-color: #1565D8;
+}
+
+
+/*------connect section------*/
+
+.connect__description {
+    color: #5A7184
+}
+
+.text-box {
+    border: 2px solid rgba(180, 187, 197, 0.3);
+    border-radius: 4px;
+
+}
+
+.connect__dashboard img {
+    width: 100%;
+
+}
+
+.text-box__title {
+    color: #1565D8;
+    
+}
+.tips__text-box {
+    @apply px-[22px] pb-[40px] md:pl-[24px] md:pr-[20px] md:pb-[36px] md:mb-[25px] flex flex-col items-center text-center justify-evenly sm:text-left;
+}
+.swiper-button-prevs,
+.swiper-button-nexts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 56px;
+    width: 54px;
+    border-radius: 200px;
+    color: #959EAD;
+    border: 2px solid #B3BAC5;
+   
+}
+
+.swiper-button-prevs:hover,
+.swiper-button-nexts:hover {
+    width: 54px;
+    color: #183B56;
+    border: 2px solid #183B56;
+    transition: all 0.5s;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 182px !important; 
+    height: 396px !important; 
+}
+.phone {
+    background-color: #FFFF;
+    top: 50%;
+    left:0%;
+    transform: translateY(-50%);
+    z-index: 1000;
+   
+}
+
+.suggestion {
+    height: auto;
+}
