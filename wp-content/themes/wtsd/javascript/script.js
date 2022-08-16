@@ -23,8 +23,8 @@ const swiper = new Swiper('.swiper', {
 
     loop: true,
     modules: [Navigation],
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 2,
+    spaceBetween: 23,
     observer: true,
     centeredSlides: true,
     navigation: {
@@ -41,8 +41,12 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
 
         768: {
-
+            slidesPerView: 3,
             spaceBetween: 26,
+        },
+        1028: {
+            slidesPerView: 3,
+            spaceBetween: 30,
         }
     }
 });

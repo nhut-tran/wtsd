@@ -24,48 +24,7 @@ get_header();
     endwhile; // End of the loop.
     ?>
     <div class="container">
-
-        <div>
-            <!-- hero-->
-            <div
-                class="hero pt-[5.875rem] md:pt-[94px] xl:pt-[165px] py-5 flex-col px-5 flex items-center sm:px-0 xl:flex-row lg:px-[150px] lg:justify-around">
-                <div
-                    class="hero__text flex flex-col text-center items-center lg:max-w-[545px] md:ml-[41px] md:mr-[122px] lg:ml-0 lg:mr-[71px] lg:text-left">
-                    <div
-                        class="hero__sub-title-container flex flex-col items-center mb-6 md:flex-row sm:mb-8 md:mb-[34px] lg:self-start">
-                        <div class="hero__stick w-3.5 h-0.5 "></div>
-                        <h4
-                            class="hero__sub-title relative mx-[4.063rem] text-sm mt-4 font-semibold md:m-0 md:ml-3 sm:drop-shadow-none lg:mt-0 lg:ml-2 lg:text-xs xl:ml-[26px]">
-                            Changing the way you go to healthcare
-                        </h4>
-                    </div>
-                    <h1
-                        class="hero__title leading-10 tracking-[0.2px] px-10 md:px-5 lg:px-0 text-[2rem] font-bold sm:text-[56px] sm:leading-[4.25rem]">
-                        Primary Care Designed for Real Life</h1>
-                    <p class="hero__description small-text mt-6 px-3.5 md:px-6 lg:px-0 xl:pr-10 sm:mt-[26px] lg:mt-8">
-                        Discuss patients,
-                        share notes and documents in a secure manner and
-                        be part of a network of health professionals ready to collaborate better.</p>
-                    <form
-                        class="hero__form flex flex-col px-2 md:ml-[24px] md:mr-[26px] sm:flex-row items-center sm:justify-center md:justify-start mt-[30px] sm:mt-[42px] lg:mt-10">
-                        <input class="indent-3 sm:indent-5 sm:min-w-[429px] sm:h-[58px]"
-                            placeholder="name@youremail.com" />
-                        <button
-                            class="btn btn--action hero__form font-bold mt-5 px-[5.813rem] py-[9px] sm:mt-0 sm:px-6 sm:py-[18px] ">Subscribe</button>
-                    </form>
-
-                </div>
-
-                <div class="hero__img mt-10 sm:mt-16 md:ml-[81px] md:mr-[163px] lg:ml-0 lg:mr-0 xl:mt-0">
-                    <picture>
-                        <source media="(min-width: 400px)" srcset="/wp-content/uploads/2022/08/headerimagelarge.png">
-                        <img src="/wp-content/uploads/2022/08/headerimagesmall.png">
-                    </picture>
-                </div>
-            </div>
-            <!-- hero end-->
-        </div>
-
+        <?php include 'template-parts/blocks/homepage/hero.php' ?>
         <!--connect-->
         <section class="connect mt-24 sm:px-5 md:px-10 lg:px-0 flex flex-col items-center">
             <div class="connect__text text-center order-1 self-start flex flex-col md:w-full sm:text-left lg:flex-row">
@@ -311,11 +270,11 @@ get_header();
         </section>
         <!--suggestion end -->
         <!--slider start -->
-        <section class="mt-[81px]">
+        <section class="track-health mt-[81px] md:mt-[80px] md:pl-[57px] xl:pl-0">
             <div
-                class="relative flex flex-col items-center overflow-x-hidden sm:overflow-auto pl-[18px] pr-[22px] md:px-0 lg:pt-[96px] lg:pb-[100px] lg:flex-row">
+                class="relative flex flex-col items-center overflow-x-hidden pl-[18px] pr-[22px] md:px-0 lg:pt-[96px] lg:pb-[100px] lg:flex-row">
                 <div
-                    class="track-health__text flex flex-col text-center items-center md:mr-[160px] md:ml-[161px] lg:ml-[150px] lg:mr-[108px] lg:text-left lg:items-start">
+                    class="track-health__text flex flex-col xl:max-w-[353px] text-center items-center md:mr-[160px] md:ml-[161px] lg:ml-[150px] lg:mr-[108px] lg:text-left lg:items-start">
 
                     <div class="track-health__stick w-7 h-[5px]"></div>
                     <h1
@@ -330,17 +289,15 @@ get_header();
 
                 </div>
                 <div
-                    class="slider-container max-w-[320px] sm:max-w-max md:pl-[46px] md:pr-[43px] lg:pl-0 lg:pr-[57px] xl:max-w-[829px]">
-                    <div
-                        class="swiper ml-[46px] md:ml-0  relative pl-[18px] md:pl-[49px] xl:pl-[8px] h-[426px] w-[620px] md:w-[722px] lg:w-[720px] md:h-[561px] xl:w-[829px] xl:h-[638px]">
-                        <div
-                            class="absolute phone w-[212px] h-[426px] md:w-[231px] md:h-[464px] xl:w-[262px] xl:h-[550px]">
-                            <picture>
-                                <source media="(min-width: 768px)"
-                                    srcset="/wp-content/uploads/2022/08/iphonedesktop.png">
-                                <img src="/wp-content/uploads/2022/08/iphonetablet.png">
-                            </picture>
-                        </div>
+                    class="slider-container flex items-center overflow-hidden relative pl-[133px] w-[256px] ml-[64px] h-[515px]  md:w-[711px] md:h-[561px]  xl:max-w-[829px] xl:h-[638px] md:pl-[31px] md:pr-[43.28px] lg:pl-0 lg:pr-[57px]">
+                    <div class="absolute phone w-[212px] h-[426px] md:w-[231px] md:h-[464px] xl:w-[262px] xl:h-[550px]">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="/wp-content/uploads/2022/08/iphonedesktop.png">
+                            <img src="/wp-content/uploads/2022/08/iphonetablet.png">
+                        </picture>
+                    </div>
+                    <div class="swiper w-[390px] md:ml-0 md:w-[646px] xl:w-[825px]">
+
                         <div class="swiper-wrapper flex items-center">
 
                             <div class="swiper-slide md:w-[198px] md:h-[429px]">
