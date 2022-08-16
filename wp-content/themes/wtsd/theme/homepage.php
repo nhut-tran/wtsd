@@ -87,8 +87,7 @@ get_header();
 
                 <picture width="100%">
                     <source media="(min-width: 900px)" srcset="/wp-content/uploads/2022/08/dashboardlarge.png">
-                    <source media="(min-width: 400px)"
-                        srcset="/wp-content/uploads/2022/08/dashboardmedium-e1660211008508.png">
+                    <source media="(min-width: 400px)" srcset="/wp-content/uploads/2022/08/dashboardmedium.png">
                     <img width="100%" src="/wp-content/uploads/2022/08/dashboardsmall.png">
                 </picture>
             </div>
@@ -311,50 +310,93 @@ get_header();
             </div>
         </section>
         <!--suggestion end -->
-        <section class="pl-[64px] overflow-x-hidden">
-            <div class="h-[515px] place-items-center ">
-                <div class="swiper relative pl-[18px]  h-[426px] w-[620px]">
-                    <div class="absolute phone w-[212px] h-[426px]">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="/wp-content/uploads/2022/08/iphonedesktop.png">
-                            <img src="/wp-content/uploads/2022/08/iphonetablet.png">
-                        </picture>
-                    </div>
-                    <div class="swiper-wrapper flex items-center">
+        <!--slider start -->
+        <section class="mt-[81px]">
+            <div
+                class="relative flex flex-col items-center overflow-x-hidden sm:overflow-auto pl-[18px] pr-[22px] md:px-0 lg:pt-[96px] lg:pb-[100px] lg:flex-row">
+                <div
+                    class="track-health__text flex flex-col text-center items-center md:mr-[160px] md:ml-[161px] lg:ml-[150px] lg:mr-[108px] lg:text-left lg:items-start">
 
-                        <div class="swiper-slide">
+                    <div class="track-health__stick w-7 h-[5px]"></div>
+                    <h1
+                        class="track-health__title leading-9 px-7 md:px-0 tracking-[0.2px] text-[20px] mb-[18px] mt-[26px] font-bold md:text-[40px] md:leading-[52px]">
+                        Track Your Health
+                        History Periodically</h1>
+                    <p class="track-health__description small-text px-1">
+                        A more fluid communication reduces the risk of errors and enhances your protection from a
+                        forensic
+                        point of view</p>
+                    <a href="/" class="button-link mt-7 text-sm font-bold leading-5">Learn more &#8594</a>
+
+                </div>
+                <div
+                    class="slider-container max-w-[320px] sm:max-w-max md:pl-[46px] md:pr-[43px] lg:pl-0 lg:pr-[57px] xl:max-w-[829px]">
+                    <div
+                        class="swiper ml-[46px] md:ml-0  relative pl-[18px] md:pl-[49px] xl:pl-[8px] h-[426px] w-[620px] md:w-[722px] lg:w-[720px] md:h-[561px] xl:w-[829px] xl:h-[638px]">
+                        <div
+                            class="absolute phone w-[212px] h-[426px] md:w-[231px] md:h-[464px] xl:w-[262px] xl:h-[550px]">
                             <picture>
                                 <source media="(min-width: 768px)"
-                                    srcset="/wp-content/uploads/2022/08/rectangledesktop.png">
-                                <img src="/wp-content/uploads/2022/08/rectangletablet.png">
+                                    srcset="/wp-content/uploads/2022/08/iphonedesktop.png">
+                                <img src="/wp-content/uploads/2022/08/iphonetablet.png">
                             </picture>
                         </div>
-                        <div class="swiper-slide">
-                            <picture>
-                                <source media="(min-width: 768px)"
-                                    srcset="/wp-content/uploads/2022/08/rectangledesktop.png">
+                        <div class="swiper-wrapper flex items-center">
 
-                                <img src="/wp-content/uploads/2022/08/rectangletablet.png">
-                            </picture>
-                        </div>
-                        <div class="swiper-slide">
-                            <picture>
-                                <source media="(min-width: 768px)"
-                                    srcset="/wp-content/uploads/2022/08/rectangledesktop.png">
+                            <div class="swiper-slide md:w-[198px] md:h-[429px]">
+                                <picture>
+                                    <source media="(min-width: 768px)"
+                                        srcset="/wp-content/uploads/2022/08/rectangledesktop.png">
+                                    <img src="/wp-content/uploads/2022/08/rectangletablet.png">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide md:w-[198px] md:h-[429px]">
+                                <picture>
+                                    <source media="(min-width: 768px)"
+                                        srcset="/wp-content/uploads/2022/08/rectangledesktop.png">
 
-                                <img src="/wp-content/uploads/2022/08/rectangletablet.png">
-                            </picture>
+                                    <img src="/wp-content/uploads/2022/08/rectangletablet.png">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide md:w-[198px] md:h-[429px]">
+                                <picture>
+                                    <source media="(min-width: 768px)"
+                                        srcset="/wp-content/uploads/2022/08/rectangledesktop.png">
+
+                                    <img src="/wp-content/uploads/2022/08/rectangletablet.png">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide md:w-[198px] md:h-[429px]">
+                                <picture>
+                                    <source media="(min-width: 768px)"
+                                        srcset="/wp-content/uploads/2022/08/rectangledesktop.png">
+
+                                    <img src="/wp-content/uploads/2022/08/rectangletablet.png">
+                                </picture>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-
+                <div
+                    class="flex lg:absolute lg:bottom-[20px] lg:left-[50%] xl:left-[150px] xl:bottom-[175px] flex-col md:flex-row-reverse md:max-w-[270px] justify-center grow-0 max-w-[134px] mt-[37px]">
+                    <div id="totalSlide"
+                        class="text-center flex items-center text-base font-semibold leading-5 ml-[46px]">1/4
+                        screens</div>
+                    <div class="flex mt-2">
+                        <div class="swiper-button-prevs mr-6 cursor-pointer">&#8592</div>
+                        <div class="swiper-button-nexts cursor-pointer">&#8594</div>
+                    </div>
+                </div>
             </div>
-            <div class="flex grow-0">
-                <div class="swiper-button-prevs">&#8592</div>
-                <div class="swiper-button-nexts">&#8594</div>
+        </section>
+        <section class="contact">
+            <div class="contact-form mt-4">
+                <?php echo do_shortcode('[gravityform id="3" title="true"]'); ?>
             </div>
         </section>
     </div>
+    <!--slider end -->
 
 
 </main><!-- #main -->

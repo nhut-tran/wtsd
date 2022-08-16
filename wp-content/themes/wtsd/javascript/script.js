@@ -7,9 +7,16 @@
  * https://esbuild.github.io/
  */
 
-
 import Swiper, { Navigation, Pagination } from 'swiper';
 
+
+function displyTotalSLide(swiper) {
+
+    var totalSlide = document.getElementById('totalSlide');
+
+    totalSlide.innerHTML = (swiper.realIndex + 1) + '/' + (this.wrapperEl.querySelectorAll(".swiper-slide").length - 2) / 2 + ' screens';
+
+}
 
 
 const swiper = new Swiper('.swiper', {
@@ -18,12 +25,8 @@ const swiper = new Swiper('.swiper', {
     modules: [Navigation],
     slidesPerView: 3,
     spaceBetween: 30,
-    // // If we need pagination
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
-
-
+    observer: true,
+    centeredSlides: true,
     navigation: {
         nextEl: '.swiper-button-nexts',
         prevEl: '.swiper-button-prevs',
@@ -33,4 +36,16 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+    runCallbacksOnInit: true,
+
+    breakpoints: {
+
+        768: {
+
+            spaceBetween: 26,
+        }
+    }
 });
+
+swiper.on('slideChange', displyTotalSLide)
+

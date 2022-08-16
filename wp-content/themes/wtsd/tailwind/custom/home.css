@@ -16,16 +16,20 @@
     color: #5A7184
 }
 
+
 .small-text {
     @apply text-base leading-7 tracking-normal font-normal sm:text-lg sm:leading-8;
 }
 
 .btn {
-    border-radius: 4px;
+    border-radius: 8px;
     color: #FFFF;
 
 }
-
+.btn:hover {
+    background-color: #1590d8;
+    transition: all 0.2s;
+}
 .btn--action {
     background-color: #1565D8;
 }
@@ -76,23 +80,133 @@
     border: 2px solid #183B56;
     transition: all 0.5s;
 }
-
+.swiper {
+    flex-shrink: 0;
+    flex-grow: 0;
+}
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 182px !important; 
     height: 396px !important; 
+    overflow-y: hidden;
+}
+@media (min-width: 768px) {
+    .swiper-slide {
+        
+        width: 198px !important; 
+        height: 429px !important; 
+    }
+}
+@media (min-width: 1280px) {
+    .swiper-slide {
+        
+        width: 255px !important; 
+        height: 487px !important; 
+    }
 }
 .phone {
     background-color: #FFFF;
     top: 50%;
-    left:0%;
-    transform: translateY(-50%);
+    left: 0px;
+    transform: translateY(-49%);
+
     z-index: 1000;
+    
    
 }
 
+#totalSlide {
+    font-family: HK Grotesk;
+    color: #183B56;
+}
 .suggestion {
     height: auto;
 }
+
+.track-health__stick {
+    background-color: #344563;
+}
+
+.button-link {
+    color: #1565D8
+}
+
+
+.slider-container {
+    background-image: linear-gradient(to right, #FFFF 50%,  #1566d834 50% 100%);
+}
+@media (min-width: 640px) {
+    .slider-container {
+        background-image: linear-gradient(to right, #FFFF 15%,  #1566d834 15% 100%);
+    }
+}
+
+
+.contact-form .gform_heading {
+    @apply text-[28px] leading-9 font-bold text-left mb-6 md:text-5xl md:leading-[60px] md:mb-[33px] lg:leading-[68px] lg:text-[56px] lg:max-w-[474px] lg:mr-[111px]; 
+    color: #183B56;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.contact-form form {
+    @apply md:w-[390px]
+}
+.contact-form input {
+    border: 1px solid #C3CAD9;
+    border-radius: 8px;
+    text-indent: 48px;
+    @apply md:mr-[17px] h-[48px] md:h-[56px];
+    
+}
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus
+ {
+    outline:  1px solid #C3CAD9;
+    transition: all 1s;
+    
+}
+.contact-form input[type=text] {
+    background-image: url("/wp-content/uploads/2022/08/user.png");
+    background-repeat: no-repeat;
+    background-position: 18px 50%;
+}
+.contact-form input[type=email] {
+    background-image: url("/wp-content/uploads/2022/08/envelope.png");
+    background-repeat: no-repeat;
+    background-position: 18px 50%;
+}
+.contact-form input[type=submit] {
+    background-color: #1565D8;
+    border-radius: 8px;
+    color: #FFFF;
+    width: 150px;
+    height: 48px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0;
+}
+.contact-form input[type=submit]:hover {
+    background-color: #1590d8;
+    transition: all 0.2s;
+}
+.contact-form input::placeholder {
+    font-family: Open Sans;
+    font-size: 16px;
+}
+
+/* disable error message display from gravity form */
+.gform_validation_errors {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .contact-form .gform_wrapper {
+        display: flex;
+    }
+}
+
+

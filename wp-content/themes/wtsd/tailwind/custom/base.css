@@ -36,6 +36,10 @@ body {
 	margin: auto;
 }
 
+.contact {
+	@apply pl-[30px] pr-[51px] md:pl-[180px] md:pr-[181px] xl:pl-[150px] xl:pr-[315px];
+}
+
 
 h1, h2, h4 {
 	font-family: HK Grotesk;
