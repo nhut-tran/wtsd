@@ -188,8 +188,9 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/template-functions.php';
 
 
-add_action('acf/init', 'hero_acf_init_block_types');
-function hero_acf_init_block_types()
+add_action('acf/init', 'homepage_acf_init_block_types');
+// add_action('acf/init', 'connect_acf_init_block_types');
+function homepage_acf_init_block_types()
 {
 
 
@@ -202,7 +203,38 @@ function hero_acf_init_block_types()
 			'description'       => __('Hero component of homepage'),
 			'render_template'   => 'template-parts/blocks/homepage/hero.php',
 			'icon'              => 'admin-comments',
-			'enqueue_style'     => get_stylesheet_uri()
+
+		));
+		acf_register_block_type(array(
+			'name'              => 'connect',
+			'title'             => __('Connect'),
+			'description'       => __('connect component of homepage'),
+			'render_template'   => 'template-parts/blocks/homepage/connect.php',
+			'icon'              => 'admin-comments',
+
+		));
+		acf_register_block_type(array(
+			'name'              => 'tips',
+			'title'             => __('Tips'),
+			'description'       => __('tips component'),
+			'render_template'   => 'template-parts/blocks/homepage/tips.php',
+			'icon'              => 'admin-comments',
+
+		));
+		acf_register_block_type(array(
+			'name'              => 'suggestion',
+			'title'             => __('Suggestion'),
+			'description'       => __('Suggestion component'),
+			'render_template'   => 'template-parts/blocks/homepage/suggestion.php',
+			'icon'              => 'admin-comments',
+
+		));
+		acf_register_block_type(array(
+			'name'              => 'slider',
+			'title'             => __('Slider'),
+			'description'       => __('Slider component'),
+			'render_template'   => 'template-parts/blocks/homepage/slider.php',
+			'icon'              => 'admin-comments',
 
 		));
 	}

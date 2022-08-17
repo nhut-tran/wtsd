@@ -1,17 +1,9 @@
 <?php
-$className = 'hero';
-if (!empty($block['className'])) {
-    $className .= ' ' . $block['className'];
-}
-if (!empty($block['align'])) {
-    $className .= ' align' . $block['align'];
-}
-
-
-$hero_title = get_field('hero_title') ?: 'Your hero title here...';
-$sub_title = get_field('sub_title') ?: 'Your sub title';
-$text = get_field('text') ?: 'small text here';
-$image = get_field('hero_image') ?: 'image is here';
+$hero_title = get_field('hero_title');
+$sub_title = get_field('sub_title');
+$text = get_field('text');
+$imageMobile = get_field('hero_image_mobile');
+$imageDesktop = get_field('hero_image_desktop');
 ?>
 
 <div
@@ -23,7 +15,7 @@ $image = get_field('hero_image') ?: 'image is here';
             <div class="hero__stick w-3.5 h-0.5 "></div>
             <h4
                 class="hero__sub-title relative mx-[4.063rem] text-sm mt-4 font-semibold md:m-0 md:ml-3 sm:drop-shadow-none lg:mt-0 lg:ml-2 lg:text-xs xl:ml-[26px]">
-
+                <?php echo $sub_title; ?></h1>
             </h4>
         </div>
         <h1
@@ -39,14 +31,12 @@ $image = get_field('hero_image') ?: 'image is here';
         </form>
 
     </div>
+    <div class="hero__img mt-10 sm:mt-16 md:ml-[81px] md:mr-[163px] lg:ml-0 lg:mr-0 xl:mt-0">
 
-</div>
+        <picture>
+            <source media="(min-width: 400px)" srcset="<?php echo $imageDesktop; ?>">
+            <img src=" <?php echo $imageMobile; ?>">
 
-<div class="hero__img mt-10 sm:mt-16 md:ml-[81px] md:mr-[163px] lg:ml-0 lg:mr-0 xl:mt-0">
-
-    <picture>
-        <source media="(min-width: 400px)" srcset="/wp-content/uploads/2022/08/headerimagelarge.png">
-        <!-- <img src="<?php echo $image['url']; ?>"> -->
-    </picture>
-</div>
+        </picture>
+    </div>
 </div>

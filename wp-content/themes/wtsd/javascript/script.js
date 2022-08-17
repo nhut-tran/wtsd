@@ -14,7 +14,7 @@ function displyTotalSLide(swiper) {
 
     var totalSlide = document.getElementById('totalSlide');
 
-    totalSlide.innerHTML = (swiper.realIndex + 1) + '/' + (this.wrapperEl.querySelectorAll(".swiper-slide").length - 2) / 2 + ' screens';
+    totalSlide.innerHTML = (swiper.realIndex + 1) + '/' + this.customTotalSlide + ' screens';
 
 }
 
@@ -47,6 +47,12 @@ const swiper = new Swiper('.swiper', {
         1028: {
             slidesPerView: 3,
             spaceBetween: 30,
+        }
+    },
+    on: {
+        beforeInit: function () {
+            let numOfSlides = this.wrapperEl.querySelectorAll(".swiper-slide").length;
+            this.customTotalSlide = numOfSlides;
         }
     }
 });
