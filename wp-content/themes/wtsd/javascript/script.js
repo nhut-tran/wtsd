@@ -58,4 +58,3 @@ const swiper = new Swiper('.swiper', {
 });
 
 swiper.on('slideChange', displyTotalSLide)
-
