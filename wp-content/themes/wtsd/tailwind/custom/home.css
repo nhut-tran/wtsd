@@ -1,6 +1,6 @@
 /*import style for swipejs for homepage */
 @import "../../../../../node_modules/swiper/swiper-bundle.css";
-
+@import '../custom/font-awesome.min.css';
 
 .hero__sub-title {
     color: #183B56;
@@ -105,8 +105,8 @@
 @media (min-width: 1280px) {
     .swiper-slide {
         
-        width: 255px !important; 
-        height: 487px !important; 
+        width: 254px !important; 
+        height: 484px !important; 
     }
 }
 .phone {
@@ -226,3 +226,7 @@
 }
 
 
+.fa {
+    font-family: Font Awesome;
+    font-size: 12px;
+}

@@ -31,5 +31,5 @@ $tips_title = get_field('tips_title');
         <?php else : ?>
         <div></div>
         <?php endif; ?>
-
+    </div>
 </section>

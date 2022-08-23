@@ -11,20 +11,20 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header>
-        <?php
+	<header>
+		<?php
 		if (!is_front_page()) {
 			the_title('<h1 class="entry-title">', '</h1>');
 		} else {
 			the_title('<h2 class="entry-title">', '</h2>');
 		}
 		?>
-    </header>
+	</header>
 
-    <?php wtsd_post_thumbnail(); ?>
+	<?php wtsd_post_thumbnail(); ?>
 
-    <div class="entry-content">
-        <?php
+	<div class="entry-content">
+		<?php
 		the_content();
 
 		wp_link_pages(
@@ -34,11 +34,11 @@
 			)
 		);
 		?>
-    </div>
+	</div>
 
-    <?php if (get_edit_post_link()) : ?>
-    <footer>
-        <?php
+	<?php if (get_edit_post_link()) : ?>
+		<footer>
+			<?php
 			edit_post_link(
 				sprintf(
 					wp_kses(
@@ -56,6 +56,6 @@
 				'</span>'
 			);
 			?>
-    </footer>
-    <?php endif; ?>
+		</footer>
+	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

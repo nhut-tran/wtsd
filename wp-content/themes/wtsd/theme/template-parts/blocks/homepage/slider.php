@@ -28,25 +28,20 @@ $image_4_desktop = get_field('slider_image_4_desktop');
 ?>
 <section class="track-health mt-[81px] md:mt-[80px] md:pl-[57px] xl:pl-0">
 
-    <div
-        class="relative flex flex-col items-center overflow-x-hidden pl-[18px] pr-[22px] md:px-0 lg:pt-[96px] lg:pb-[100px] lg:flex-row">
-        <div
-            class="track-health__text flex flex-col xl:max-w-[353px] text-center items-center md:mr-[160px] md:ml-[161px] lg:ml-[150px] lg:mr-[108px] lg:text-left lg:items-start">
+    <div class="relative flex flex-col items-center overflow-x-hidden pl-[18px] pr-[22px] md:px-0 lg:pt-[96px] lg:pb-[100px] lg:flex-row">
+        <div class="track-health__text flex flex-col xl:max-w-[353px] text-center items-center md:mr-[160px] md:ml-[161px] lg:ml-[150px] lg:mr-[108px] lg:text-left lg:items-start">
 
             <div class="track-health__stick w-7 h-[5px]"></div>
-            <h1
-                class="track-health__title leading-9 px-7 md:px-0 tracking-[0.2px] text-[20px] mb-[18px] mt-[26px] font-bold md:text-[40px] md:leading-[52px]">
+            <h1 class="track-health__title leading-9 px-7 md:px-0 tracking-[0.2px] text-[20px] mb-[18px] mt-[26px] font-bold md:text-[40px] md:leading-[52px]">
                 <?php echo $slider_title ?>
                 <p class="track-health__description small-text px-1">
                     <?php echo $slider_text ?>
                 </p>
-                <a href="<?php echo $slider_link['url'] ?>" target="<?php echo $slider_link['target'] ?>"
-                    class="button-link mt-7 text-sm font-bold leading-5"><?php echo $slider_link["title"] ?></a>
+                <a href="<?php echo $slider_link['url'] ?>" target="<?php echo $slider_link['target'] ?>" class="button-link mt-7 text-sm font-bold leading-5"><?php echo $slider_link["title"] ?></a>
 
         </div>
-        <div
-            class="slider-container flex items-center overflow-hidden relative pl-[133px] w-[256px] ml-[64px] h-[515px]  md:w-[711px] md:h-[561px]  xl:max-w-[829px] xl:h-[638px] md:pl-[31px] md:pr-[43.28px] lg:pl-0 lg:pr-[57px]">
-            <div class="absolute phone w-[212px] h-[426px] md:w-[231px] md:h-[464px] xl:w-[262px] xl:h-[550px]">
+        <div class="slider-container flex items-center overflow-hidden relative pl-[133px] w-[256px] ml-[64px] h-[515px] md:ml-0  md:w-[711px] md:h-[561px]  xl:max-w-[829px] xl:h-[638px] md:pl-[31px] md:pr-[43.28px] lg:pl-[5px] lg:pr-[57px]">
+            <div class="absolute phone w-[212px] h-[426px] md:w-[231px] md:h-[464px] xl:w-[262px] xl:h-[527px]">
                 <picture>
                     <source media="(min-width: 1024px)" srcset="<?php echo $image_phone_desktop ?>">
                     <source media="(min-width: 768px)" srcset="<?php echo $image_phone_tablet ?>">
@@ -89,13 +84,12 @@ $image_4_desktop = get_field('slider_image_4_desktop');
                 </div>
             </div>
         </div>
-        <div
-            class="flex lg:absolute lg:bottom-[20px] lg:left-[50%] xl:left-[150px] xl:bottom-[175px] flex-col md:flex-row-reverse md:max-w-[270px] justify-center grow-0 max-w-[134px] mt-[37px]">
+        <div class="flex lg:absolute lg:bottom-[20px] lg:left-[50%] xl:left-[150px] xl:bottom-[175px] flex-col md:flex-row-reverse md:max-w-[270px] justify-center grow-0 max-w-[134px] mt-[37px]">
             <div id="totalSlide" class="text-center flex items-center text-base font-semibold leading-5 ml-[46px]">1/4
                 screens</div>
             <div class="flex mt-2">
-                <div class="swiper-button-prevs mr-6 cursor-pointer">&#8592</div>
-                <div class="swiper-button-nexts cursor-pointer">&#8594</div>
+                <div class="swiper-button-prevs mr-6 cursor-pointer"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+                <div class="swiper-button-nexts cursor-pointer"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
             </div>
         </div>
     </div>

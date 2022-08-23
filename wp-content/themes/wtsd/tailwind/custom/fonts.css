@@ -6,6 +6,11 @@
 
 
 
+ @font-face {
+    font-family: 'Font Awesome';
+    src: URL('/wp-content/themes/wtsd/font/FontAwesome.otf') format('truetype');
+    
+}
 @font-face {
     font-family: 'HK Grotesk';
     src: URL('/wp-content/themes/wtsd/font/HKGrotesk-Regular.otf') format('truetype');
